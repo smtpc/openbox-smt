@@ -11,5 +11,6 @@ echo "[conky files]"
 sudo cp conky.conf /etc/conky/conky.conf
 
 echo "[openbox autosart]"
-echo -e "compton &\nconky -c /etc/conky/conky.conf &\nfeh --bg-center ~/Downloads/*.png &\nguake" > ~/.config/autostart
+wget -P ~/Downloads https://www.kali.org/wallpapers/images/2025/kali-maze.jpg
+echo -e "compton &\nconky -c /etc/conky/conky.conf &\nfeh --bg-center ~/Downloads/kali-maze.jpg &\nguake" > ~/.config/autostart
 
