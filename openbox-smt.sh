@@ -7,5 +7,9 @@ sudo apt install xinit xterm xorg openbox guake compton conky feh fish pcmanfm t
 echo "[startx]"
 echo -e "exec openbox-session" > ~/.xinitrc
 
+echo "[conky files]"
+sudo cp conky.conf /etc/conky/conky.conf
+
 echo "[openbox autosart]"
 echo -e "compton &\nconky -c /etc/conky/conky.conf &\nfeh --bg-center ~/Downloads/*.png &\nguake" > ~/.config/autostart
+
